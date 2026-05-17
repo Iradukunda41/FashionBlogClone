@@ -1,0 +1,280 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #f1f1f1; 
+  color: #333;
+  line-height: 1.6;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400; 
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+.container {
+  max-width: 1400px; 
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.blog-layout {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+}
+
+
+.left-column {
+  flex: 0 0 65%; 
+  max-width: 65%;
+}
+
+.right-column {
+  flex: 0 0 35%; 
+  max-width: 35%;
+}
+
+
+.site-header {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #ffffff;
+  margin-bottom: 0;
+}
+
+.site-header h1 {
+  font-size: 3.5rem;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.site-header p span {
+  background-color: #000;
+  color: #fff;
+  padding: 4px 12px;
+  font-size: 0.9rem;
+  font-family: 'Oswald', sans-serif;
+}
+
+
+.card {
+  background-color: #ffffff; 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); 
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+
+.card-title {
+  background-color: #000;
+  color: #fff;
+  padding: 15px 20px;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+}
+
+
+.post-hero-image {
+  width: 100%;
+  height: auto;
+}
+
+.post-body {
+  padding: 25px;
+}
+
+.post-body h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.post-body h5 {
+  text-align: center;
+  color: #888;
+  font-weight: 400;
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.post-body p {
+  color: #555;
+  margin-bottom: 25px;
+  text-align: justify;
+}
+
+
+.post-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #eee;
+  padding-top: 20px;
+}
+
+.btn-read-more {
+  background-color: #000;
+  color: #fff;
+  padding: 10px 24px;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+
+.btn-read-more:hover {
+  background-color: #444;
+  transform: translateY(-2px);
+}
+
+.comment-count {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1rem;
+  background-color: #fff;
+  color: #000;
+  padding: 5px 12px;
+  border: 1px solid #ccc;
+}
+
+
+
+
+.about-img {
+  width: 100%;
+  filter: grayscale(100%); 
+}
+
+.about-text {
+  padding: 20px;
+}
+
+.about-text h4 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+.about-text p {
+  font-size: 0.95rem;
+  color: #666;
+}
+
+
+.popular-list {
+  list-style: none;
+}
+
+.popular-list li {
+  display: flex;
+  align-items: center;
+  padding: 12px 20px;
+  border-bottom: 1px solid #eee;
+  transition: background-color 0.3s ease;
+}
+
+.popular-list li:last-child {
+  border-bottom: none;
+}
+
+
+.popular-list li:hover {
+  background-color: #f9f9f9;
+  cursor: pointer;
+}
+
+.popular-thumb {
+  width: 50px; 
+  height: 50px;
+  object-fit: cover;
+  margin-right: 15px;
+}
+
+.popular-title {
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+
+.tags-container {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap; 
+  gap: 8px;
+}
+
+.tag {
+  display: inline-block;
+  padding: 8px 15px;
+  background-color: #e2e2e2;
+  font-family: 'Oswald', sans-serif;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+}
+
+.tag:hover {
+  background-color: #ccc;
+}
+
+
+.tag.active {
+  background-color: #000;
+  color: #fff;
+}
+
+
+.site-footer {
+  background-color: #616161;
+  color: #fff;
+  text-align: center;
+  padding: 40px 20px;
+  margin-top: 20px;
+}
+
+.btn-to-top {
+  display: inline-block;
+  background-color: #000;
+  color: #fff;
+  padding: 12px 24px;
+  margin-bottom: 20px;
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 1px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-to-top:hover {
+  background-color: #333;
+}
+
+
+@media (max-width: 992px) {
+  .blog-layout {
+    flex-direction: column; 
+  }
+
+  .left-column, .right-column {
+    flex: 0 0 100%; 
+    max-width: 100%;
+  }
+  
+  .site-header h1 {
+    font-size: 2.5rem;
+  }
+}

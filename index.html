@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jane Blog - Assignment Clone</title>
+
+   <!-- Required Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  
+  <!-- Link to your custom vanilla CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Semantic Header -->
+  <header class="site-header">
+    <h1>JANE BLOG</h1>
+    <p>Welcome to the blog of <span>Jane's world</span></p>
+  </header>
+
+  <!-- Main Container -->
+  <div class="container">
+
+    <!-- Semantic Two-Column Layout -->
+    <div class="blog-layout">
+      
+      <!-- LEFT COLUMN: Blog Posts -->
+      <main class="left-column">
+        
+        <!-- Blog Post 1 -->
+        <article class="card">
+          <img src="/images/hero1.png" alt="Girl wearing a hat" class="post-hero-image">
+          <div class="post-body">
+            <h2>TITLE HEADING</h2>
+            <h5>Title description, May 2, 2016</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper.</p>
+            
+            <!-- Post Footer Requirement -->
+            <div class="post-footer">
+              <a href="#" class="btn-read-more">READ MORE</a>
+              <span class="comment-count">Comments 1</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Blog Post 2 -->
+        <article class="card">
+          <img src="/images/hero2.png" alt="Runway fashion show" class="post-hero-image">
+          <div class="post-body">
+            <h2>TITLE HEADING</h2>
+            <h5>Title description, April 23, 2016</h5>
+            <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            
+            <!-- Post Footer Requirement -->
+            <div class="post-footer">
+              <a href="#" class="btn-read-more">READ MORE</a>
+              <span class="comment-count">Comments 2</span>
+            </div>
+          </div>
+        </article>
+
+      </main>
+
+      <!-- RIGHT COLUMN: Sidebar -->
+      <aside class="right-column">
+        
+        <!-- Sidebar Section 1: About Me -->
+        <div class="card">
+          <img src="/images/about.png" alt="Jane" class="about-img">
+          <div class="about-text">
+            <h4>My Name</h4>
+            <p>Just me, myself and I, exploring the universe of uknownment. I have a heart of love and a interest of lorem ipsum and mauris neque quam blog. I want to share my world with you.</p>
+          </div>
+        </div>
+
+        <!-- Sidebar Section 2: Popular Posts -->
+        <div class="card">
+          <div class="card-title">Popular Posts</div>
+          <ul class="popular-list">
+            <li>
+              <img src="/images/thurmb1.png" alt="Denim" class="popular-thumb">
+              <span class="popular-title">Denim</span>
+            </li>
+            <li>
+              <img src="/images/thumb2.png" alt="Sweaters" class="popular-thumb">
+              <span class="popular-title">Sweaters</span>
+            </li>
+            <li>
+              <img src="/images/thumb3.png" alt="Workshop" class="popular-thumb">
+              <span class="popular-title">Workshop</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Sidebar Section 3: Tags -->
+        <div class="card">
+          <div class="card-title">Tags</div>
+          <div class="tags-container">
+            <!-- Active tag with black background -->
+            <span class="tag active">Fashion</span>
+            <span class="tag">New York</span>
+            <span class="tag">London</span>
+            <span class="tag">Hats</span>
+            <span class="tag">Norway</span>
+            <span class="tag">Sweaters</span>
+            <span class="tag">Ideas</span>
+            <span class="tag">Deals</span>
+            <span class="tag">Accessories</span>
+            <span class="tag">News</span>
+            <span class="tag">Clothing</span>
+            <span class="tag">Shopping</span>
+            <span class="tag">Jeans</span>
+            <span class="tag">Trends</span>
+          </div>
+        </div>
+
+      </aside>
+      
+    </div><!-- End Layout -->
+    
+  </div><!-- End Container -->
+
+  <!-- Semantic Footer -->
+  <footer class="site-footer">
+    <a href="#" class="btn-to-top">To the Top</a>
+    <p>Powered by Custom Vanilla CSS</p>
+  </footer>
+
+</body>
+</html>
