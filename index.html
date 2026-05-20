@@ -5,40 +5,54 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jane Blog - Assignment Clone</title>
 
-   <!-- Required Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-  
-  <!-- Link to your custom vanilla CSS -->
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-  <!-- Semantic Header -->
-  <header class="site-header">
-    <h1>JANE BLOG</h1>
-    <p>Welcome to the blog of <span>Jane's world</span></p>
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-snapchat"></i></a>
+      <a href="#"><i class="fab fa-flickr"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+    <div class="search-icon">
+      <a href="#"><i class="fas fa-search"></i></a>
+    </div>
+  </nav>
+
+  <!-- HEADER -->
+  <header class="header">
+    <h1>JANE BLOGLIFE</h1>
+    <h6>Welcome to the blog of <span class="brand">Jane's fashion world</span></h6>
+    <img src="images/jane.jpg" alt="Fashion Image">
+    <div class="header-text">
+      <h1>Jane's <br>Fashion Blog</h1>
+      <button>Subscribe</button>
+    </div>
   </header>
 
-  <!-- Main Container -->
+  <!-- MAIN SECTION -->
   <div class="container">
-
-    <!-- Semantic Two-Column Layout -->
     <div class="blog-layout">
-      
-      <!-- LEFT COLUMN: Blog Posts -->
+
+      <!-- LEFT COLUMN -->
       <main class="left-column">
-        
-        <!-- Blog Post 1 -->
+
         <article class="card">
-          <img src="images/hero1.png" alt="Girl wearing a hat" class="post-hero-image">
           <div class="post-body">
             <h2>TITLE HEADING</h2>
             <h5>Title description, May 2, 2016</h5>
+            <img src="images/hero1.png" class="post-hero-image" alt="Post image">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper.</p>
-            
-            <!-- Post Footer Requirement -->
             <div class="post-footer">
               <a href="#" class="btn-read-more">READ MORE</a>
               <span class="comment-count">Comments 1</span>
@@ -46,15 +60,24 @@
           </div>
         </article>
 
-        <!-- Blog Post 2 -->
+        <!-- COMMENTS SECTION -->
+        <div class="comments-section">
+          <div class="comment-row">
+            <img src="images/george.jpg" alt="George" class="comment-avatar">
+            <div class="comment-body">
+              <h4>George</h4>
+              <p class="comment-time">May 3, 2015, 6:32 PM</p>
+              <p>Great blog post! Following</p>
+            </div>
+          </div>
+        </div>
+
         <article class="card">
-          <img src="images/hero2.png" alt="Runway fashion show" class="post-hero-image">
           <div class="post-body">
             <h2>TITLE HEADING</h2>
             <h5>Title description, April 23, 2016</h5>
+            <img src="images/hero2.png" class="post-hero-image" alt="Post image">
             <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            
-            <!-- Post Footer Requirement -->
             <div class="post-footer">
               <a href="#" class="btn-read-more">READ MORE</a>
               <span class="comment-count">Comments 2</span>
@@ -62,68 +85,110 @@
           </div>
         </article>
 
+        <article class="card">
+          <div class="post-body">
+            <h2>TITLE HEADING</h2>
+            <h5>Title description, April 26, 2016</h5>
+            <img src="images/runaway.png" class="post-hero-image" alt="Runway image">
+            <p>Dont miss! The runway in New York City this weekend is gonna be legendary!</p>
+            <p>Some text about this blog entry. Fashion fashion and mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sedtellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+            <div class="post-footer">
+              <a href="#" class="btn-read-more">READ MORE</a>
+              <span class="comment-count">Comments 2</span>
+            </div>
+          </div>
+        </article>
+
+        
+
       </main>
 
-      <!-- RIGHT COLUMN: Sidebar -->
+      <!-- RIGHT COLUMN -->
       <aside class="right-column">
-        
-        <!-- Sidebar Section 1: About Me -->
+
+        <!-- About -->
         <div class="card">
-          <img src="images/about.png" alt="Jane" class="about-img">
+          <img src="images/about.png" class="about-img" alt="About me">
           <div class="about-text">
             <h4>My Name</h4>
             <p>Just me, myself and I, exploring the universe of uknownment. I have a heart of love and a interest of lorem ipsum and mauris neque quam blog. I want to share my world with you.</p>
           </div>
         </div>
 
-        <!-- Sidebar Section 2: Popular Posts -->
+        <!-- Popular Posts -->
         <div class="card">
           <div class="card-title">Popular Posts</div>
           <ul class="popular-list">
-            <li>
-              <img src="images/thumb1.png" alt="Denim" class="popular-thumb">
-              <span class="popular-title">Denim</span>
-            </li>
-            <li>
-              <img src="images/thumb2.png" alt="Sweaters" class="popular-thumb">
-              <span class="popular-title">Sweaters</span>
-            </li>
-            <li>
-              <img src="images/thumb3.png" alt="Workshop" class="popular-thumb">
-              <span class="popular-title">Workshop</span>
-            </li>
+            <li><img src="images/thumb1.png" alt="Denim"><span>Denim</span></li>
+            <li><img src="images/thumb2.png" alt="Sweaters"><span>Sweaters</span></li>
+            <li><img src="images/thumb3.png" alt="Workshop"><span>Workshop</span></li>
           </ul>
         </div>
 
-        <!-- Sidebar Section 3: Tags -->
+        <!-- Advertise -->
+        <div class="card">
+          <div class="card-title">Advertise</div>
+          <div class="ad-box">
+            <span>Your AD Here</span>
+          </div>
+        </div>
+
+        <!-- Tags -->
         <div class="card">
           <div class="card-title">Tags</div>
           <div class="tags-container">
-            <!-- Active tag with black background -->
             <span class="tag active">Fashion</span>
             <span class="tag">New York</span>
             <span class="tag">London</span>
             <span class="tag">Hats</span>
-            <span class="tag">Norway</span>
             <span class="tag">Sweaters</span>
             <span class="tag">Ideas</span>
+            <span class="tag">News</span>
             <span class="tag">Deals</span>
             <span class="tag">Accessories</span>
-            <span class="tag">News</span>
-            <span class="tag">Clothing</span>
-            <span class="tag">Shopping</span>
-            <span class="tag">Jeans</span>
-            <span class="tag">Trends</span>
+          </div>
+        </div>
+
+        <!-- Inspiration -->
+        <div class="card">
+          <div class="card-title">Inspiration</div>
+          <div class="inspiration-grid">
+            <img src="images/inspiration1.png" alt="Sport">
+            <img src="images/inspiration2.png" alt="Tea">
+            <img src="images/inspiration3.png" alt="Team">
+            <img src="images/inspiration4.png" alt="Avatar">
+          </div>
+        </div>
+
+        <!-- Follow Me -->
+        <div class="card">
+          <div class="card-title">Follow Me</div>
+          <div class="sidebar-social-icons">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-snapchat"></i></a>
+            <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+        </div>
+
+        <!-- Subscribe -->
+        <div class="card">
+          <div class="card-title">Subscribe</div>
+          <div class="subscribe-box">
+            <p>Enter your e-mail below and get notified on the latest blog posts.</p>
+            <input type="email" placeholder="Enter e-mail">
+            <button>Subscribe</button>
           </div>
         </div>
 
       </aside>
-      
-    </div><!-- End Layout -->
-    
-  </div><!-- End Container -->
 
-  <!-- Semantic Footer -->
+    </div>
+  </div>
+
+  <!-- FOOTER -->
   <footer class="site-footer">
     <a href="#" class="btn-to-top">To the Top</a>
     <p>Powered by Custom Vanilla CSS</p>
